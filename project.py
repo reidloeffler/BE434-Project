@@ -71,10 +71,15 @@ def select_2():
 
     try:
         new_concentration = float(new_concentration.strip())
-        print(new_description.strip(),
-                file=open('lookup_table.txt', 'at'))
-        print(new_concentration, file=open('lookup_table.txt', 'at'))
-        print('\nNew concentration has been added.')
+
+        if new_concentration > 0:
+            print(new_description.strip(),
+                    file=open('lookup_table.txt', 'at'))
+            print(new_concentration, file=open('lookup_table.txt', 'at'))
+            print('\nNew concentration has been added.')
+        else: 
+            print('Concentration must be greater than 0. Please try again')
+
         return()
     
     except ValueError:
