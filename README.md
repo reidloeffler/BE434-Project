@@ -43,7 +43,7 @@ To search through the lookup table, begin by running the following command to se
 $ ./project.py             
 
 Please make a selection:
-1: Search look up table
+1: Search lookup table
 2: Add a new entry
 3: Quit
 ```
@@ -53,7 +53,7 @@ Then, select the first option and enter you search term to see the matching resu
 $ ./project.py             
 
 Please make a selection:
-1: Search look up table
+1: Search lookup table
 2: Add a new entry
 3: Quit
 $ 1
@@ -73,7 +73,7 @@ Lastly, select the desired item to see its corresponding potassium concentration
 $ ./project.py             
 
 Please make a selection:
-1: Search look up table
+1: Search lookup table
 2: Add a new entry
 3: Quit
 $ 1
@@ -115,7 +115,7 @@ To add to the lookup table, begin by running the following command to see the se
 $ ./project.py             
 
 Please make a selection:
-1: Search look up table
+1: Search lookup table
 2: Add a new entry
 3: Quit
 ```
@@ -125,7 +125,7 @@ Then, select the second option and enter the desired item description:
 $ ./project.py             
 
 Please make a selection:
-1: Search look up table
+1: Search lookup table
 2: Add a new entry
 3: Quit
 $ 2
@@ -139,7 +139,7 @@ Lastly, enter the corresponding potassium concentration (mg/L):
 $ ./project.py             
 
 Please make a selection:
-1: Search look up table
+1: Search lookup table
 2: Add a new entry
 3: Quit
 $ 2

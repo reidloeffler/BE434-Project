@@ -91,7 +91,7 @@ def main():
 
     while user_selection != '1' or user_selection != '2':
         print('\nPlease make a selection:')
-        print('1: Search look up table')
+        print('1: Search lookup table')
         print('2: Add a new entry')
         print('3: Quit')
 
