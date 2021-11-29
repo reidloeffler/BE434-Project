@@ -10,7 +10,7 @@
 
 - `potassium.pdf`: PDF obtained from the USDA website containing various foods and drinks along with their corresponding potassium content (mg) for a given amount
 
-- `raw_data_file.txt`: Text file containing the data information as the potassium.pdf file 
+- `raw_data_file.txt`: Text file containing the same data as the potassium.pdf file 
 
 ---
 
