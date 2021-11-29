@@ -14,6 +14,17 @@
 
 ---
 
+## Overview
+
+For my senior design project, my team and I have to design a potassium diaganostic system that tracks the users daily potassium intake. The user can directly measure potassium concentration (mg/L) for food or drink using an ion-selective electrode, or they can choose to use the system's built-in lookup table to obtain a 'known' potassium concentration (mg/L) for the item. The system then uses image processing software to estimate the volume (L) of the given item in order to calculate potassium content (mg). Potassium concentraion is never shown to the user becuase the primary purpose of the system is to track potassium intake (mg) throughout the day.
+
+For the purposes of this project, I decided to write a program that has the ability to: 
+- Create a lookup table containing item descriptions and their corresponding potassium concentrations
+- Seach through the lookup table and obtain the corresponding potassium concentration for the selected item, which is then displayed for the user
+- Add new items to lookup table for future use
+
+---
+
 ## Creating the Lookup Table 
 
 To create the lookup table, run the following command in your terminal: 
@@ -22,12 +33,6 @@ To create the lookup table, run the following command in your terminal:
 $ ./create_look_up_table.py
 ```
 *Please note that raw_data_file.txt will need to be downloaded prior to running the command*
-
-Method:
-1. Items with non-numeric volumes (ex. package, bottle) are ignored
-2. Volumes for the remaining items are converted to litres 
-3. Potassium concentation (mg/L) is calculated using potassium content (mg) and volume (L)
-4. The item description and it's corresponding potassium concentration are added to the lookup_table.txt file
 
 ---
 
@@ -142,7 +147,7 @@ $ 2
 Enter a description:
 $ peach
 Enter the corresponding concentration (mg/L):
-20
+$ 20
 
 New concentration has been added.
 ```
@@ -153,4 +158,29 @@ $ tail -2 lookup_table.txt
 peach
 20.0
 ```
+
+---
+
+## Methods
+
+Creating the Lookup Table:
+1. The raw data file is read line by line 
+2. Items with non-numeric volumes (ex. package, bottle) are ignored
+3. Volumes for the remaining items are converted to litres 
+4. Potassium concentation (mg/L) is calculated using potassium content (mg) and volume (L)
+5. The item description and it's corresponding potassium concentration are added to the lookup_table.txt file
+
+Searching Through the Lookup Table:
+1. User selects the first option
+2. User enters a search term
+4. The lookup table file is read line by line, and descriptions containg the search phrase are saved along with their corresponding potassium concentration
+4. The saved item descriptions are listed and the user selects the desired item from the matches
+5. The selected item and its potassium concentration are obtained from the saved matches and displayed for the user to see
+
+Adding to the Lookup Table:
+1. User selects the second option
+2. User enters a new item description
+3. User enters the corresponding potassium concentration
+4. The item description and its potassium concentration are appended to the lookup table file
+
 ---
