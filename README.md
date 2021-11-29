@@ -173,7 +173,7 @@ Creating the Lookup Table:
 Searching Through the Lookup Table:
 1. User selects the first option
 2. User enters a search term
-4. The lookup table file is read line by line, and descriptions containg the search phrase are saved along with their corresponding potassium concentration
+4. The lookup table file is read line by line, and descriptions containing the search phrase are saved along with their corresponding potassium concentration
 4. The saved item descriptions are listed and the user selects the desired item from the matches
 5. The selected item and its potassium concentration are obtained from the saved matches and displayed for the user to see
 
