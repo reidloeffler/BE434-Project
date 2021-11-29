@@ -168,7 +168,7 @@ Creating the Lookup Table:
 2. Items with non-numeric volumes (ex. package, bottle) are ignored
 3. Volumes for the remaining items are converted to litres 
 4. Potassium concentation (mg/L) is calculated using potassium content (mg) and volume (L)
-5. The item description and it's corresponding potassium concentration are added to the lookup_table.txt file
+5. The item description and its corresponding potassium concentration are added to the lookup_table.txt file
 
 Searching Through the Lookup Table:
 1. User selects the first option
