@@ -1308,5 +1308,3 @@ Beverages, carbonated, club soda
 33.81
 Beverages, carbonated, low calorie, other than cola or pepper, with aspartame, contains caffeine
 33.81
-peach
-20.0
